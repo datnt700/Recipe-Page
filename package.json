@@ -19,6 +19,7 @@
     "test:e2e:watch": "playwright test --watch"
   },
   "dependencies": {
+    "@emotion/css": "^11.13.4",
     "@emotion/react": "^11.13.3",
     "@emotion/styled": "^11.13.0",
     "@next/bundle-analyzer": "^14.2.12",
