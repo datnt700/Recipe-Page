@@ -19,6 +19,7 @@
     "test:e2e:watch": "playwright test --watch"
   },
   "dependencies": {
+    "@emotion/css": "^11.13.4",
     "@emotion/react": "^11.13.3",
     "@emotion/styled": "^11.13.0",
     "@next/bundle-analyzer": "^14.2.12",
@@ -55,7 +56,6 @@
     "lint-staged": "^15.2.10",
     "postcss": "^8",
     "prettier": "^3.3.3",
-    "tailwindcss": "^3.4.1",
     "ts-jest": "^29.2.5",
     "typescript": "^5.6.2",
     "vitest": "^2.1.1"
