@@ -46,7 +46,8 @@ module.exports = {
         "prettier/prettier": "error", // Prettier as an ESLint rule, set to throw errors on failure
         "react/react-in-jsx-scope": "off", // Not required in React 17+
         "@typescript-eslint/explicit-module-boundary-types": "off", // Disable rule for return types on functions
-        "import/order": ["error", { "newlines-between": "always" }] // Enforce ordering of imports
+        "import/order": ["error", { "newlines-between": "always" }], // Enforce ordering of imports
+        'react/no-unknown-property': ['error', { ignore: ['css'] }],
       },
       settings: {
         react: {
