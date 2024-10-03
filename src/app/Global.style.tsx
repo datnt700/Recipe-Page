@@ -15,6 +15,8 @@ export const GlobalStyles = () => (
       body {
         font-family: 'Playfair Display', serif;
         font-style: normal;
+        background-color: #0e1325;
+        padding: 0.5rem;
       }
     `}
   />
