@@ -4,8 +4,8 @@ import React, { useEffect } from 'react';
 
 import { categoryStyle } from '../../_components/layout/Category.style';
 import { CategoryItem } from '../../_components/layout/CategoryItem';
-import { useCategories } from '../../_hook/useCategory';
 
+import { useCategories } from '@/app/_hooks/useCategory';
 import { CategoryType } from '@/app/_types/Category';
 
 export const Category = () => {
