@@ -10,7 +10,7 @@ interface CategoryItemProps {
 
 export const CategoryItem = ({ name, thumb }: CategoryItemProps) => {
   return (
-    <div css={cateItemStyle.container}>
+    <div css={cateItemStyle.container} data-testid="category-item">
       <div css={cateItemStyle.image}>
         <Image src={thumb} alt={'category-image'} width={65} height={50} />
       </div>

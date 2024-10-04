@@ -19,15 +19,14 @@ export const Category = () => {
         {isLoading && <p style={{ color: 'white' }}>...Is Loading</p>}
         <h2 css={categoryStyle.title}>Categories</h2>
         <div css={categoryStyle.list}>
-          {data
-            ?.slice(0, 6)
-            .map((item) => (
+          {data?.slice(0, 6).map((item) => (
+            <div key={item.idCategory} data-testid="category-item">
               <CategoryItem
-                key={item.idCategory}
                 name={item.strCategory}
                 thumb={item.strCategoryThumb}
               />
-            ))}
+            </div>
+          ))}
         </div>
       </div>
     </section>
