@@ -10,16 +10,16 @@ export const introStyle = {
     borderRadius: '0.75rem',
     position: 'relative',
     '@media (min-width: 640px)': {
-      height: '15rem',
-    },
-    '@media (min-width: 1024px)': {
       height: '20rem',
     },
-    '@media (min-width: 1280px)': {
+    '@media (min-width: 1024px)': {
       height: '25rem',
     },
-    '@media (min-width: 1550px)': {
+    '@media (min-width: 1280px)': {
       height: '30rem',
+    },
+    '@media (min-width: 1550px)': {
+      height: '40rem',
     },
   }),
   imageWrapper: css({
