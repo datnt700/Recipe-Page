@@ -18,5 +18,15 @@ export const categoryStyle = {
     '@media (min-width: 1024px)': {
       gridTemplateColumns: 'repeat(1,1fr)',
     },
+    button: {
+      border: 'none',
+      backgroundColor: 'transparent',
+      color: '#F9FAFB',
+      cursor: 'pointer',
+      borderRadius: '0.5rem',
+      '&:hover': {
+        backgroundColor: '#FEBD2E',
+      },
+    },
   }),
 };

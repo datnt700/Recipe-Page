@@ -76,10 +76,10 @@ describe('Category Component', () => {
     mockedAxiosGet.mockResolvedValueOnce({
       data: { categories: mockCategories },
     });
-
+    const mockHandleCate = vi.fn();
     render(
       <QueryClientProvider client={queryClient}>
-        <Category />
+        <Category cateName={'Beef'} handleCate={mockHandleCate} />
       </QueryClientProvider>
     );
 

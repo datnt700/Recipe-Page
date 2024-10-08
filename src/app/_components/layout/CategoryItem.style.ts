@@ -10,9 +10,6 @@ export const cateItemStyle = {
     flexDirection: 'row',
     alignItems: 'center',
     cursor: 'pointer',
-    '&:hover': {
-      backgroundColor: '#FEBD2E',
-    },
   }),
   image: css({
     position: 'relative',
