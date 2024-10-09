@@ -2,6 +2,7 @@
 
 import React, { useEffect, useState } from 'react';
 import { UseQueryResult } from '@tanstack/react-query';
+import Link from 'next/link';
 
 import { useFood } from '../../_hooks/useFood';
 import { foodStyle } from '../../../app/_components/layout/Food.style';
@@ -52,7 +53,9 @@ export const Food = ({ cateName, option, nameFood }: FoodProps) => {
         {isLoading && <p style={{ color: 'white' }}>...Is Loading</p>}
         {food?.slice(0, 6).map((item) => (
           <div key={item.idMeal} data-testid="mock-component">
-            <Card name={item.strMeal} thumb={item.strMealThumb} />
+            <Link href={{ pathname: '/food', query: { id: item.idMeal } }}>
+              <Card name={item.strMeal} thumb={item.strMealThumb} />
+            </Link>
           </div>
         ))}
       </div>
