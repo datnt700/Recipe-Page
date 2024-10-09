@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react';
 import { UseQueryResult } from '@tanstack/react-query';
 import Link from 'next/link';
 
-import { useFood } from '../../_hooks/useFood';
+import { useFoods } from '../../_hooks/useFood';
 import { foodStyle } from '../../../app/_components/layout/Food.style';
 import { Card } from '../../../app/_components/common/Card';
 import { FoodType } from '../../_types/Food';
@@ -16,8 +16,8 @@ interface FoodProps {
 }
 
 export const Food = ({ cateName, option, nameFood }: FoodProps) => {
-  const { data, isLoading }: UseQueryResult<FoodType[]> = useFood({
-    cateName: cateName,
+  const { data, isLoading }: UseQueryResult<FoodType[]> = useFoods({
+    categoryName: cateName,
   });
   const [food, setFood] = useState<FoodType[]>([]);
   useEffect(() => {

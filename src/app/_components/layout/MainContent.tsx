@@ -1,9 +1,10 @@
 /** @jsxImportSource @emotion/react */
-import { useState } from 'react';
+import React, { useState } from 'react';
 
-import { mainStyle } from '@/app/_components/layout/MainContent.style';
-import { Category } from '@/app/_components/layout/Category';
-import { Content } from '@/app/_components/layout/Content';
+import { Category } from '../../../app/_components/layout/Category';
+import { Content } from '../../../app/_components/layout/Content';
+
+import { mainStyle } from './MainContent.style';
 
 export const MainContent = () => {
   const [cateName, setCateName] = useState('Beef');
