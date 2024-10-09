@@ -1,10 +1,10 @@
 /** @jsxImportSource @emotion/react */
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
-import { InputSearch } from '@/app/_components/common/InputSearch';
-import { contentStyle } from '@/app/_components/layout/Content.style';
-import { DropList } from '@/app/_components/common/DropList';
-import { Food } from '@/app/_components/layout/Food';
+import { InputSearch } from '../../../app/_components/common/InputSearch';
+import { contentStyle } from '../../../app/_components/layout/Content.style';
+import { DropList } from '../../../app/_components/common/DropList';
+import { Food } from '../../../app/_components/layout/Food';
 
 interface ContentProps {
   cateName: string;
