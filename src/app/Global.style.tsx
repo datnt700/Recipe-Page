@@ -6,6 +6,7 @@ export const GlobalStyles = () => (
   <Global
     styles={css`
       @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
       * {
         margin: 0;
         padding: 0;
