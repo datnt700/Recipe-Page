@@ -16,7 +16,7 @@ export const Card = ({ name, thumb }: CardProps) => {
         alt={'card-image'}
         width={200}
         height={200}
-        style={{ width: '100%', height: '15rem', borderRadius: '0.75rem' }}
+        css={cardStyle.photo}
       />
       <h3 css={cardStyle.name}>{name}</h3>
     </div>

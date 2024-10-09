@@ -8,6 +8,11 @@ export const cardStyle = {
     flexDirection: 'column',
     borderRadius: '0.75rem',
   }),
+  photo: css({
+    width: '100%',
+    height: '15rem',
+    borderRadius: '0.75rem',
+  }),
   name: css({
     color: '#E5E7EB',
     fontSize: ' 1rem',
